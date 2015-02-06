@@ -5,37 +5,378 @@
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Let&#x27;s Build HTML Emails with Grunt &amp; Assemble!!</title>
-  <link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
+  
+
+<style type="text/css">
+body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;
+}
+body {
+color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-size: 14px; line-height: 19px;
+}
+h1 a:active {
+color: #00288B !important;
+}
+h2 a:active {
+color: #00288B !important;
+}
+h3 a:active {
+color: #00288B !important;
+}
+h4 a:active {
+color: #00288B !important;
+}
+h5 a:active {
+color: #00288B !important;
+}
+h6 a:active {
+color: #00288B !important;
+}
+h1 a:visited {
+color: #00288B !important;
+}
+h2 a:visited {
+color: #00288B !important;
+}
+h3 a:visited {
+color: #00288B !important;
+}
+h4 a:visited {
+color: #00288B !important;
+}
+h5 a:visited {
+color: #00288B !important;
+}
+h6 a:visited {
+color: #00288B !important;
+}
+table.button:hover td {
+background: #00388B !important;
+}
+table.button:visited td {
+background: #00388B !important;
+}
+table.button:active td {
+background: #00388B !important;
+}
+table.button:hover td a {
+color: #fff !important;
+}
+table.button:visited td a {
+color: #fff !important;
+}
+table.button:active td a {
+color: #fff !important;
+}
+table.button:hover td {
+background: #00388B !important;
+}
+table.tiny-button:hover td {
+background: #00388B !important;
+}
+table.small-button:hover td {
+background: #00388B !important;
+}
+table.medium-button:hover td {
+background: #00388B !important;
+}
+table.large-button:hover td {
+background: #00388B !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+color: #555 !important;
+}
+table.secondary td a:visited {
+color: #555 !important;
+}
+table.secondary:active td a {
+color: #555 !important;
+}
+table.success:hover td {
+background: #457a1a !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+body.outlook p {
+display: inline !important;
+}
+table.facebook:hover td {
+background: #2d4473 !important;
+}
+table.twitter:hover td {
+background: #0087bb !important;
+}
+table.google-plus:hover td {
+background: #CC0000 !important;
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+}
+</style>
 </head>
 
-<table class="body">
+<table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
   <tbody>
-    <tr>
-      <td class="center" align="center" valign="top">
-        <center>
+    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+      <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+        <center style="width: 100%; min-width: 580px;">
 
-          <table class="row header">
+          <table class="row header" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; background: rgb(129, 129, 129); padding: 0px;">
             <tbody>
-              <tr>
-                <td class="center" align="center">
-                  <center>
+              <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                <td class="center" align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+                  <center style="width: 100%; min-width: 580px;">
 
-                    <table class="container">
+                    <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
                       <tbody>
-                        <tr>
-                          <td class="wrapper last">
+                        <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                          <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
 
-                            <table class="twelve columns">
+                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
                               <tbody>
-                                <tr>
-                                  <td class="six sub-columns ccf"> <img src="http://placehold.it/200x50" alt="" /> </td>
-                                  <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                                    <span class="template-header">
+                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                  <td class="six sub-columns ccf" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 50%; color: white; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"> <img src="http://placehold.it/200x50" alt="" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" /> </td>
+                                  <td class="six sub-columns last" style="text-align: right; vertical-align: middle; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; min-width: 0px; width: 50%; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="right" valign="middle">
+                                    <span class="template-header" style="color: white;">
                                 [ Let's code some HTML emails. ]
                               </span>
 
                                   </td>
-                                  <td class="expander"></td>
+                                  <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -53,103 +394,24 @@
 
           <br>
 
-          <table class="container">
+          <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;">
 
-<style>
-  table.facebook td {
-    background: #3b5998;
-    border-color: #2d4473;
-  }
 
-  table.facebook:hover td {
-    background: #2d4473 !important;
-  }
-
-  table.twitter td {
-    background: #00acee;
-    border-color: #0087bb;
-  }
-
-  table.twitter:hover td {
-    background: #0087bb !important;
-  }
-
-  table.google-plus td {
-    background-color: #DB4A39;
-    border-color: #CC0000;
-  }
-
-  table.google-plus:hover td {
-    background: #CC0000 !important;
-  }
-
-  .content-picture {
-    font-family: Helvetica;
-    color: #CBCBCB;
-    font-size: 20px;
-    width: 580px;
-  }
-
-  .template-label {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 13px;
-  }
-
-  .callout .panel {
-    background: #ECF8FF;
-    border-color: #b9e5ff;
-  }
-
-  .header {
-    background: grey;
-  }
-
-  .footer .wrapper {
-    background: #ebebeb;
-  }
-
-  .footer h5 {
-    padding-bottom: 10px;
-  }
-
-  table.columns .text-pad {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  table.columns .left-text-pad {
-    padding-left: 10px;
-  }
-
-  table.columns .right-text-pad {
-    padding-right: 10px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    table[class="body"] .right-text-pad {
-      padding-left: 10px !important;
-    }
-    table[class="body"] .left-text-pad {
-      padding-right: 10px !important;
-    }
-  }
-</style>
 
 
 
 
 <tbody>
-  <tr>
-    <td>
+  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+    <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
 
-      <!-- content start -->
+      
 
-      <table class="row">
+      <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
         <tbody>
-          <tr>
-            <td>
-              <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture">
+          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+              <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 580px; max-width: 100%; float: left; clear: both; display: block; font-family: Helvetica; color: #CBCBCB; font-size: 20px;" align="left" />
             </td>
           </tr>
         </tbody>
@@ -157,170 +419,170 @@
 
 
 
-      <table class="row">
+      <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
         <tbody>
-          <tr>
-            <td class="wrapper">
+          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td class="wrapper" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
 
-              <!-- Article Start -->
-              <table class="six columns">
+              
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td>
-                      <h3>Two-Column Layout</h3>
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                      <h3 style="color: #2e2e2e; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 32px; margin: 0; padding: 0;" align="left">Two-Column Layout</h3>
                       <br>
-                      <p class="lead">This is the lead.</p>
-                      <p>Let's test the .yml file to ensure the data is piping through:</p>
-                      <p><strong>&rarr; TEST PASSED!</strong>
+                      <p class="lead" style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 18px; margin: 0 0 10px; padding: 0;" align="left">This is the lead.</p>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Let's test the .yml file to ensure the data is piping through:</p>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left"><strong>&rarr; TEST PASSED!</strong>
                       </p>
-                      <p>Cool. Now let's test the Front Matter too:</p>
-                      <p><strong>&rarr; TEST PASSED</strong>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Cool. Now let's test the Front Matter too:</p>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left"><strong>&rarr; TEST PASSED</strong>
                       </p>
-                      <p>Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p>
                     </td>
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
 
-              <!-- Highlight Panel -->
-              <table class="six columns">
+              
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td class="panel">
-                      <p>Stop. Panel time.</p>
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td class="panel" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 10px; border: 1px solid #d9d9d9;" align="left" valign="top">
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Stop. Panel time.</p>
                     </td>
 
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
 
-              <!-- Last Paragraph(s) -->
-              <table class="six columns">
+              
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td>
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
                       <br>
 
-                      <p>That's all there is to it. You are now ready to start coding some HTML email with Zurb.</p>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">That's all there is to it. You are now ready to start coding some HTML email with Zurb.</p>
                       <br>
 
 
-                      <table class="button">
+                      <table class="button" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;">
                         <tbody>
-                          <tr>
-                            <td>
-                              <a href="#">CTA goes here! »</a>
+                          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; display: block; width: auto !important; background: #0F88B7; margin: 0; padding: 8px 0; border: 1px solid #0f88b7;" align="center" valign="top">
+                              <a href="#" style="color: #ffffff; text-decoration: none; font-weight: bold; font-family: Helvetica, Arial, sans-serif; font-size: 16px; display: block; height: 100%; width: 100%;">CTA goes here! »</a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
 
                     </td>
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
 
             </td>
-            <td class="wrapper last">
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
 
 
-              <!-- (Second Column Start) -->
+              
 
 
-              <!-- Resources -->
-              <table class="six columns">
+              
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td class="panel">
-                      <h6>Cool Resources</h6>
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td class="panel" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 10px; border: 1px solid #d9d9d9;" align="left" valign="top">
+                      <h6 style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0; padding: 0;" align="left">Cool Resources</h6>
                       <br>
-                      <table>
+                      <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
                         <tbody>
-                          <tr>
-                            <td>
-                              <a href="#">Blog »</a>
+                          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                              <a href="#" style="color: #0F88B7; text-decoration: none;">Blog »</a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
-                      <hr>
-                      <table>
+                      <hr style="color: #d9d9d9; height: 1px; background: #d9d9d9; border: none;" />
+                      <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
                         <tbody>
-                          <tr>
-                            <td>
-                              <a href="#">Newsletter »</a>
+                          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+                              <a href="#" style="color: #0F88B7; text-decoration: none;">Newsletter »</a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
 
                     </td>
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
               <br>
 
-              <!-- Highlight Panel -->
-              <table class="six columns">
+              
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td class="panel">
-                      <h6>Spread the word</h6>
-                      <p>Maybe your users want to share this excitement on Facebook? Here's an example of a link for that.
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td class="panel" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 10px; border: 1px solid #d9d9d9;" align="left" valign="top">
+                      <h6 style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0; padding: 0;" align="left">Spread the word</h6>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Maybe your users want to share this excitement on Facebook? Here's an example of a link for that.
                         <br>
-                        <hr> <a href="https://www.facebook.com/sharer/sharer.php?u=">Play with a friend »</a>
+                        <hr style="color: #d9d9d9; height: 1px; background: #d9d9d9; border: none;" /> <a href="https://www.facebook.com/sharer/sharer.php?u=" style="color: #0F88B7; text-decoration: none;">Play with a friend »</a>
                       </p>
                     </td>
 
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
 
 
               <br>
-              <table class="six columns">
+              <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td class="panel">
-                      <h6 style="margin-bottom:5px;">We're Social:</h6>
-                      <table class="tiny-button facebook">
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td class="panel" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 10px; border: 1px solid #d9d9d9;" align="left" valign="top">
+                      <h6 style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0 0 5px; padding: 0;" align="left">We're Social:</h6>
+                      <table class="tiny-button facebook" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;">
                         <tbody>
-                          <tr>
-                            <td>
-                              <a href="#">Facebook</a>
+                          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; display: block; width: auto !important; background: #3b5998; margin: 0; padding: 5px 0 4px; border: 1px solid #2d4473;" align="center" valign="top">
+                              <a href="#" style="color: #ffffff; text-decoration: none; font-weight: normal; font-family: Helvetica, Arial, sans-serif; font-size: 12px; display: block; height: 100%; width: 100%;">Facebook</a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
 
-                      <hr>
+                      <hr style="color: #d9d9d9; height: 1px; background: #d9d9d9; border: none;" />
 
-                      <table class="tiny-button twitter">
+                      <table class="tiny-button twitter" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;">
                         <tbody>
-                          <tr>
-                            <td>
-                              <a href="#">Twitter</a>
+                          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                            <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; display: block; width: auto !important; background: #00acee; margin: 0; padding: 5px 0 4px; border: 1px solid #0087bb;" align="center" valign="top">
+                              <a href="#" style="color: #ffffff; text-decoration: none; font-weight: normal; font-family: Helvetica, Arial, sans-serif; font-size: 12px; display: block; height: 100%; width: 100%;">Twitter</a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
 
-                      <hr>
+                      <hr style="color: #d9d9d9; height: 1px; background: #d9d9d9; border: none;" />
 
-                      <h6 style="margin-bottom:5px;">Customer Service:</h6>
+                      <h6 style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 0 0 5px; padding: 0;" align="left">Customer Service:</h6>
 
-                      <p>Phone:
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Phone:
                         <br> 555-555-555</p>
-                      <p>Email:
-                        <br> <a href="#">Email</a>
+                      <p style="color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="left">Email:
+                        <br> <a href="#" style="color: #0F88B7; text-decoration: none;">Email</a>
                       </p>
                     </td>
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
@@ -331,22 +593,22 @@
       </table>
       <br>
       <br>
-      <!-- Legal + Unsubscribe -->
-      <table class="row">
+      
+      <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
         <tbody>
-          <tr>
-            <td class="wrapper last">
+          <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+            <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
 
-              <table class="twelve columns">
+              <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;">
                 <tbody>
-                  <tr>
-                    <td align="center">
-                      <center>
-                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a>
+                  <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                    <td align="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" valign="top">
+                      <center style="width: 100%; min-width: 580px;">
+                        <p style="text-align: center; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 112%; margin: 0 0 10px; padding: 0;" align="center"><a href="#" style="color: #0F88B7; text-decoration: none;">Terms</a> | <a href="#" style="color: #0F88B7; text-decoration: none;">Privacy</a> | <a href="#" style="color: #0F88B7; text-decoration: none;">Unsubscribe</a>
                         </p>
                       </center>
                     </td>
-                    <td class="expander"></td>
+                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
                   </tr>
                 </tbody>
               </table>
@@ -356,7 +618,7 @@
         </tbody>
       </table>
 
-      <!-- container end below -->
+      
     </td>
   </tr>
 </tbody>
