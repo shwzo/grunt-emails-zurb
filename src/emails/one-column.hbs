@@ -1,263 +1,263 @@
 ---
 layout: default.hbs
-subject: Let's Build HTML Emails with Grunt & Assemble!! 
+subject: Let's Build HTML Emails with Grunt & Assemble!!
 frontMatterTest: TEST PASSED
-
 ---
 
 
-  <style>
+<style>
+  table.facebook td {
+    background: #3b5998;
+    border-color: #2d4473;
+  }
 
-    table.facebook td {
-      background: #3b5998;
-      border-color: #2d4473;
+  table.facebook:hover td {
+    background: #2d4473 !important;
+  }
+
+  table.twitter td {
+    background: #00acee;
+    border-color: #0087bb;
+  }
+
+  table.twitter:hover td {
+    background: #0087bb !important;
+  }
+
+  table.google-plus td {
+    background-color: #DB4A39;
+    border-color: #CC0000;
+  }
+
+  table.google-plus:hover td {
+    background: #CC0000 !important;
+  }
+
+  .header {
+    background: rgb(129, 129, 129);
+  }
+
+  .template-label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .content-picture {
+    font-family: Helvetica;
+    color: #CBCBCB;
+    font-size: 20px;
+    width: 580px
+  }
+
+  .callout .wrapper {
+    padding-bottom: 20px;
+  }
+
+  .callout .panel {
+    background: #ECF8FF;
+    border-color: #b9e5ff;
+  }
+
+  .footer .wrapper {
+    background: #ebebeb;
+  }
+
+  .footer h5 {
+    padding-bottom: 10px;
+  }
+
+  table.columns .text-pad {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  table.columns .left-text-pad {
+    padding-left: 10px;
+  }
+
+  table.columns .right-text-pad {
+    padding-right: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    table[class="body"] .right-text-pad {
+      padding-left: 10px !important;
     }
-
-    table.facebook:hover td {
-      background: #2d4473 !important;
+    table[class="body"] .left-text-pad {
+      padding-right: 10px !important;
     }
-
-    table.twitter td {
-      background: #00acee;
-      border-color: #0087bb;
-    }
-
-    table.twitter:hover td {
-      background: #0087bb !important;
-    }
-
-    table.google-plus td {
-      background-color: #DB4A39;
-      border-color: #CC0000;
-    }
-
-    table.google-plus:hover td {
-      background: #CC0000 !important;
-    }
-    .header {
-      background: rgb(129, 129, 129);
-    }
-    
-    .template-label {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 11px;
-    }
-    
-    .content-picture {
-      font-family: Helvetica; 
-      color: #CBCBCB; 
-      font-size: 20px; 
-      width: 580px
-    }
-
-    .callout .wrapper {
-      padding-bottom: 20px;
-    }
-
-    .callout .panel {
-      background: #ECF8FF;
-      border-color: #b9e5ff;
-    }
-
-    .footer .wrapper {
-      background: #ebebeb;
-    }
-
-    .footer h5 {
-      padding-bottom: 10px;
-    }
-
-    table.columns .text-pad {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    table.columns .left-text-pad {
-      padding-left: 10px;
-    }
-
-    table.columns .right-text-pad {
-      padding-right: 10px;
-    }
-
-    @media only screen and (max-width: 600px) {
-
-      table[class="body"] .right-text-pad {
-        padding-left: 10px !important;
-      }
-
-      table[class="body"] .left-text-pad {
-        padding-right: 10px !important;
-      }
-    }
-
-	</style>
+  }
+</style>
 
 
-  <!-- Content Start -->
+<!-- Content Start -->
 
-  <table class="container">
-    <tr>
-      <td>
+<table class="container">
+  <tr>
+    <td>
 
-        <table class="row">
-          <tr>
-            <td class="wrapper last">
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
 
-              <table class="twelve columns">
-                <tr>
-                  <td>
-                    <h3>One-Column Layout</h3>
-                    <p class="lead">This is the lead</p>
-                    <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture">
-                    <p style="margin-bottom: 0px;">&nbsp;</p>
-                    <p>Let's test the .yml file to ensure the data is piping through:</p>
-                    <p><strong>&rarr; {{ constants.test }}</strong></p>
-                    <p>Cool. Now let's test the Front Matter too:</p>
-                    <p><strong>&rarr; {{ frontMatterTest }}</strong></p>
-                    <p>Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p> 
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
+            <table class="twelve columns">
+              <tr>
+                <td>
+                  <h3>One-Column Layout</h3>
+                  <p class="lead">This is the lead</p>
+                  <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture">
+                  <p style="margin-bottom: 0px;">&nbsp;</p>
+                  <p>Let's test the .yml file to ensure the data is piping through:</p>
+                  <p><strong>&rarr; {{ constants.test }}</strong>
+                  </p>
+                  <p>Cool. Now let's test the Front Matter too:</p>
+                  <p><strong>&rarr; {{ frontMatterTest }}</strong>
+                  </p>
+                  <p>Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
 
-            </td>
-          </tr>
-        </table>
+          </td>
+        </tr>
+      </table>
 
-        <table class="button">
-          <tr>
-            <td>
-              <a href="#">CTA</a>
-            </td>
-            <td class="expander"></td>
-          </tr>
-        </table>
+      <table class="button">
+        <tr>
+          <td>
+            <a href="#">CTA</a>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
 
-        <table class="row">
-          <tr>
-            <td class="wrapper last">
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
 
-              <table class="twelve columns">
-                <tr>
-                  <td>
-                    <br>
-                    <p>That's all there is to it. You are now ready to start coding some HTML emails with Zurb.</p>
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
+            <table class="twelve columns">
+              <tr>
+                <td>
+                  <br>
+                  <p>That's all there is to it. You are now ready to start coding some HTML emails with Zurb.</p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
 
-            </td>
-          </tr>
-        </table>
-
-
-        <table class="row callout">
-          <tr>
-            <td class="wrapper last">
-
-              <table class="twelve columns">
-                <tr>
-                  <td class="panel">
-                    <p>Stop. Panel time.</p>
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-        </table>
-
-        <table class="row footer">
-          <tr>
-            <td class="wrapper">
-
-              <table class="six columns">
-                <tr>
-                  <td class="left-text-pad">
-
-                    <h5>Connect With Us:</h5>
-
-                    <table class="tiny-button facebook">
-                      <tr>
-                        <td>
-                          <a href="#">Facebook</a>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <br>
-
-                    <table class="tiny-button twitter">
-                      <tr>
-                        <td>
-                          <a href="#">Twitter</a>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <br>
-
-                    <table class="tiny-button google-plus">
-                      <tr>
-                        <td>
-                          <a href="#">Google +</a>
-                        </td>
-                      </tr>
-                    </table>
-
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
-
-            </td>
-            <td class="wrapper last">
-
-              <table class="six columns">
-                <tr>
-                  <td class="last right-text-pad">
-                    <h5>Contact Info:</h5>
-                    <p>Phone: 555-555-5555</p>
-                    <p>Email: <a href="#">yourcompany@email.com</a></p>
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
-
-            </td>
-          </tr>
-        </table>
+          </td>
+        </tr>
+      </table>
 
 
-        <table class="row">
-          <tr>
-            <td class="wrapper last">
+      <table class="row callout">
+        <tr>
+          <td class="wrapper last">
 
-              <table class="twelve columns">
-                <tr>
-                  <td align="center">
-                    <center>
-                      <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
-                    </center>
-                  </td>
-                  <td class="expander"></td>
-                </tr>
-              </table>
+            <table class="twelve columns">
+              <tr>
+                <td class="panel">
+                  <p>Stop. Panel time.</p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
 
-            </td>
-          </tr>
-        </table>
+          </td>
+        </tr>
+      </table>
 
-        <!-- container end below -->
-      </td>
-    </tr>
-  </table>
+      <table class="row footer">
+        <tr>
+          <td class="wrapper">
+
+            <table class="six columns">
+              <tr>
+                <td class="left-text-pad">
+
+                  <h5>Connect With Us:</h5>
+
+                  <table class="tiny-button facebook">
+                    <tr>
+                      <td>
+                        <a href="#">Facebook</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <br>
+
+                  <table class="tiny-button twitter">
+                    <tr>
+                      <td>
+                        <a href="#">Twitter</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <br>
+
+                  <table class="tiny-button google-plus">
+                    <tr>
+                      <td>
+                        <a href="#">Google +</a>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+          <td class="wrapper last">
+
+            <table class="six columns">
+              <tr>
+                <td class="last right-text-pad">
+                  <h5>Contact Info:</h5>
+                  <p>Phone: 555-555-5555</p>
+                  <p>Email: <a href="#">yourcompany@email.com</a>
+                  </p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
+
+            <table class="twelve columns">
+              <tr>
+                <td align="center">
+                  <center>
+                    <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a>
+                    </p>
+                  </center>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+      <!-- container end below -->
+    </td>
+  </tr>
+</table>
 
 </center>
-      </td>
-    </tr>
-  </table>
+</td>
+</tr>
+</table>

@@ -1,8 +1,7 @@
 ---
 layout: default.hbs
-subject: Let's Build HTML Emails with Grunt & Assemble!! 
+subject: Let's Build HTML Emails with Grunt & Assemble!!
 frontMatterTest: TEST PASSED
-
 ---
 
 <style>
@@ -34,9 +33,9 @@ frontMatterTest: TEST PASSED
   }
 
   .content-picture {
-    font-family: Helvetica; 
-    color: #CBCBCB; 
-    font-size: 20px; 
+    font-family: Helvetica;
+    color: #CBCBCB;
+    font-size: 20px;
     width: 580px;
   }
 
@@ -77,11 +76,9 @@ frontMatterTest: TEST PASSED
   }
 
   @media only screen and (max-width: 600px) {
-
     table[class="body"] .right-text-pad {
       padding-left: 10px !important;
     }
-
     table[class="body"] .left-text-pad {
       padding-right: 10px !important;
     }
@@ -98,9 +95,10 @@ frontMatterTest: TEST PASSED
       <!-- content start -->
 
       <table class="row">
-        <tbody><tr>
+        <tbody>
+          <tr>
             <td>
-              <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture" >                 
+              <img class="content-picture" width="580" height="300" src="#" alt="Click to View Picture">
             </td>
           </tr>
         </tbody>
@@ -109,20 +107,25 @@ frontMatterTest: TEST PASSED
 
 
       <table class="row">
-        <tbody><tr>
+        <tbody>
+          <tr>
             <td class="wrapper">
 
               <!-- Article Start -->
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td>
-                      <h3>Two-Column Layout</h3><br>
+                      <h3>Two-Column Layout</h3>
+                      <br>
                       <p class="lead">This is the lead.</p>
                       <p>Let's test the .yml file to ensure the data is piping through:</p>
-                      <p><strong>&rarr; {{ constants.test }}</strong></p>
+                      <p><strong>&rarr; {{ constants.test }}</strong>
+                      </p>
                       <p>Cool. Now let's test the Front Matter too:</p>
-                      <p><strong>&rarr; {{ frontMatterTest }}</strong></p>
-                      <p>Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p> 
+                      <p><strong>&rarr; {{ frontMatterTest }}</strong>
+                      </p>
+                      <p>Sweet. <strong>Both</strong> tests pass. Use Front Matter for page-specific stuff, and use the constants.yml file to declare anything that will remain constant across your campaign.</p>
                     </td>
                     <td class="expander"></td>
                   </tr>
@@ -131,7 +134,8 @@ frontMatterTest: TEST PASSED
 
               <!-- Highlight Panel -->
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td class="panel">
                       <p>Stop. Panel time.</p>
                     </td>
@@ -143,7 +147,8 @@ frontMatterTest: TEST PASSED
 
               <!-- Last Paragraph(s) -->
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td>
                       <br>
 
@@ -152,7 +157,8 @@ frontMatterTest: TEST PASSED
 
 
                       <table class="button">
-                        <tbody><tr>
+                        <tbody>
+                          <tr>
                             <td>
                               <a href="#">CTA goes here! »</a>
                             </td>
@@ -175,11 +181,14 @@ frontMatterTest: TEST PASSED
 
               <!-- Resources -->
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td class="panel">
-                      <h6>Cool Resources</h6><br>
+                      <h6>Cool Resources</h6>
+                      <br>
                       <table>
-                        <tbody><tr>
+                        <tbody>
+                          <tr>
                             <td>
                               <a href="#">Blog »</a>
                             </td>
@@ -188,7 +197,8 @@ frontMatterTest: TEST PASSED
                       </table>
                       <hr>
                       <table>
-                        <tbody><tr>
+                        <tbody>
+                          <tr>
                             <td>
                               <a href="#">Newsletter »</a>
                             </td>
@@ -205,10 +215,14 @@ frontMatterTest: TEST PASSED
 
               <!-- Highlight Panel -->
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td class="panel">
                       <h6>Spread the word</h6>
-                      <p>Maybe your users want to share this excitement on Facebook? Here's an example of a link for that.<br><hr> <a href="https://www.facebook.com/sharer/sharer.php?u={{ links.social.share }}">Play with a friend »</a></p>
+                      <p>Maybe your users want to share this excitement on Facebook? Here's an example of a link for that.
+                        <br>
+                        <hr> <a href="https://www.facebook.com/sharer/sharer.php?u={{ links.social.share }}">Play with a friend »</a>
+                      </p>
                     </td>
 
                     <td class="expander"></td>
@@ -219,11 +233,13 @@ frontMatterTest: TEST PASSED
 
               <br>
               <table class="six columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td class="panel">
                       <h6 style="margin-bottom:5px;">We're Social:</h6>
                       <table class="tiny-button facebook">
-                        <tbody><tr>
+                        <tbody>
+                          <tr>
                             <td>
                               <a href="#">Facebook</a>
                             </td>
@@ -234,7 +250,8 @@ frontMatterTest: TEST PASSED
                       <hr>
 
                       <table class="tiny-button twitter">
-                        <tbody><tr>
+                        <tbody>
+                          <tr>
                             <td>
                               <a href="#">Twitter</a>
                             </td>
@@ -243,11 +260,14 @@ frontMatterTest: TEST PASSED
                       </table>
 
                       <hr>
-                      
+
                       <h6 style="margin-bottom:5px;">Customer Service:</h6>
 
-                      <p>Phone:<br> 555-555-555</p>
-                      <p>Email:<br> <a href="#">Email</a></p>
+                      <p>Phone:
+                        <br> 555-555-555</p>
+                      <p>Email:
+                        <br> <a href="#">Email</a>
+                      </p>
                     </td>
                     <td class="expander"></td>
                   </tr>
@@ -262,14 +282,17 @@ frontMatterTest: TEST PASSED
       <br>
       <!-- Legal + Unsubscribe -->
       <table class="row">
-        <tbody><tr>
+        <tbody>
+          <tr>
             <td class="wrapper last">
 
               <table class="twelve columns">
-                <tbody><tr>
+                <tbody>
+                  <tr>
                     <td align="center">
                       <center>
-                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a>
+                        </p>
                       </center>
                     </td>
                     <td class="expander"></td>
@@ -286,4 +309,3 @@ frontMatterTest: TEST PASSED
     </td>
   </tr>
 </tbody>
-
