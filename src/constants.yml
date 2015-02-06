@@ -1,0 +1,35 @@
+# Use this file to define any variables that won't change
+# throughout the course of your campaign. Uncomment the code
+# below to begin. 
+#
+# Note: 
+#
+#  1. Yaml works on indentation. Don't forget that. 
+#  2. Strings do not need to be enclosed in any quotes.
+#  3. All the data must be in-between the triple dashes.
+#
+
+test: TEST PASSED!
+
+
+# contact: 
+#    phone: 
+#    email: 
+#
+# links:
+#   cta:
+#     main: 
+#     secondary: 
+#
+#   base:
+#     home: 
+#     signup: 
+#     promotion: 
+#     service: 
+#     blog: 
+#
+#   social:
+#     facebook: 
+#     facebookshare: 
+#     twitter: 
+

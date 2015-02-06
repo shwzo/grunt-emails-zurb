@@ -27,6 +27,7 @@ module.exports = function(grunt) {
         assemble: {
           options: {
             layoutdir: 'src/layouts',
+            data: 'src/constants.yml',
             flatten: true
           },
           pages: {
@@ -83,10 +84,10 @@ module.exports = function(grunt) {
         mailgun: {
           mailer: {
             options: {
-              key: 'MAILGUN_KEY', // Enter your Mailgun API key here
-              sender: 'me@me.com', // Change this
-              recipient: 'you@you.com', // Change this
-              subject: 'This is a test email'
+              key: 'ACQUIRE-A-KEY', // Enter your Mailgun API key here
+              sender: 'blep@bonk.com', // Change this
+              recipient: 'beep@bork.com', // Change this 
+              subject: 'WHOA SHIT I LOVE TESTING EMAILS ZOMG'
             },
             src: ['dist/'+grunt.option('template')]
           }
@@ -96,7 +97,7 @@ module.exports = function(grunt) {
 
 
 
-        // Use Rackspace Cloud Files if you're using images in your email
+        // Using images in your email? Rackspace that shit. 
         cloudfiles: {
           prod: {
             'user': 'Rackspace Cloud Username', // Change this
@@ -133,9 +134,9 @@ module.exports = function(grunt) {
           test: {
             src: ['dist/'+grunt.option('template')],
             options: {
-              username: 'username', // Change this
-              password: 'password', // Change this
-              url: 'https://yourcompany.litmus.com', // Change this
+              username: 'yours@email.com', // Change this
+              password: 'PASSWORD', // Change this
+              url: 'https://mathujones.litmus.com', // Change this
               clients: ['android4', 'aolonline', 'androidgmailapp', 'aolonline', 'ffaolonline',
               'chromeaolonline', 'appmail6', 'iphone6', 'ipadmini', 'ipad', 'chromegmailnew',
               'iphone6plus', 'notes85', 'ol2002', 'ol2003', 'ol2007', 'ol2010', 'ol2011',

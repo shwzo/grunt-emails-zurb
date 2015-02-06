@@ -1,9 +1,9 @@
 {
-  "name": "email-template",
+  "name": "grunt-assemble-zurb",
   "version": "0.1.0",
   "repository": {
 	  "type": "git",
-	  "url": "https://github.com/leemunroe/grunt-email-design"
+	  "url": "https://github.com/oompt/grunt-assemble-zurb"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
